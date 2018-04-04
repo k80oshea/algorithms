@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SLL</title>
+</head>
+<body>
+
+
+<h1>Check the console!</h1>
+
+<script type="text/javascript">
+	function Node(val){
+		this.val = val;
+		this.next = null;
+	}
+
+	function SLL(){
+		this.head = null;
+
+		this.add = function(val){
+			if(this.head === null){
+				this.head = new Node(val);
+			}else{
+				var runner = this.head;
+				while(runner.next !== null){
+					runner = runner.next;
+				}
+				runner.next = new Node(val);
+			}
+			return this;
+		}
+
+		this.printAsArray = function(){
+			var arr = [];
+
+			var runner = this.head;
+
+			while(runner){
+				arr.push(runner.val)
+				runner = runner.next;
+			}
+
+			// arr.push(runner.val);
+
+			console.log(arr);
+			return this;
+		}
+	}
+
+	var list1 = new SLL();
+	list1.add(1).add(2).add(3).printAsArray();
+</script>
+</body>
+</html>
