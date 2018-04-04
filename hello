@@ -1,0 +1,29 @@
+<html>
+
+\\Page 16 
+
+\\Setting and Swapping
+var myNumber = 42;
+var myName = Katie;
+
+var temp = myNumber;
+myNumber = myName;
+myName = temp;
+
+console.log(myNumber);
+console.log(myName);
+
+
+\\Print and Count
+var multFive = [];
+var count = 0;
+for(var x=512; x<=4096; x++)
+{
+	if(x%5 == 0)
+	{
+		multFive.push(x);
+		count = count +1;
+	}
+}
+console.log(multFive);
+console.log(count);
