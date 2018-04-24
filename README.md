@@ -1,2 +1,2 @@
 Compilation of algorithms worked on at Coding Dojo DC (NoVa).
-Chapters include - Arrays, Strings, Associative Arrays, Singly Linked Lists, Doubly Linked Lists, Queues, Stacks, Recursion, Trees, Sorts, ...tbc
+Chapters include - Arrays, Strings, Associative Arrays, Singly Linked Lists, Doubly Linked Lists, Queues, Stacks, Recursion, Trees, Sorts, Sets and Priority Queues, Heaps, Hashes, Tries...tbc
