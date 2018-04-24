@@ -26,12 +26,13 @@ function SLL() {
         while(runner1.next != null) {
             while(runner2.next != runner1) {
                 if(runner1.next == runner2) {
-                    return "Loop! Found at "+runner1;
+                    return "Loop! Found at "+runner2;
                 }
-                runner2 = runner2.next;
+                runner2 = runner2.next.next;
+                runner1 = runner1.next;
             }
-            runner1 = runner1.next;
         }
+        return "No loop here!"
     }
 }
 var list1 = new SLL();
