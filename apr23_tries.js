@@ -1,4 +1,4 @@
-// pg 157 Tries: Insert
+// pg 157 Tries: Insert, Contains, First, Last
 function Node(val) {
     this.val = val;
     this.nodes = [];
